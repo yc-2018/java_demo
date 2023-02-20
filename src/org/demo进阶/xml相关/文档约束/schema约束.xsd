@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+xmlns="当前schema文件被谁约束这"
+targetNamespace="如果别人想要让本schema文件去约束xml · name当前xml文件必须要使用到这个地址  ·  这个地址就可以理解成是一个名字而已"
+elementFormDefault=" 本文件是质量良好的  限制就这个值还有一个就是不好的"
+:xs就是单纯一个别名   因为可以导入多个约束的 比如 我再导入一个约束 xmlns:ikun="http://www.w3.org/2001/XMLSchema"  但是一般都用:xs
+-->
+<xs:schema
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.ikun.ctlr/javase"
+        elementFormDefault="qualified"
+>
+
+    <!--定义persons复杂元素-->
+    <xs:element name="书架">                          <!-- name=“根标签名" -->
+        <xs:complexType>                             <!-- 复杂的元素      -->
+                <xs:sequence maxOccurs="unbounded">  <!-- 里面的子元素必须要按照顺序定义  maxOccurs属性：定义最大能设置多少个书标签 "1"就是1 "unbounded"就是没有上限-->
+                    <xs:element name="书">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <!--定义name和age简单元素-->
+                                <xs:element name="书名" type="xs:string"></xs:element>
+                                <xs:element name="作者" type="xs:string"></xs:element>
+                                <xs:element name="售价" type="xs:double"></xs:element>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+</xs:schema>

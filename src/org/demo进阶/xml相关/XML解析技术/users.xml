@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<users>
+    <user id="1">
+        <name>ikun</name>
+        <password>123</password>
+        <phoneid>13800138000</phoneid>
+        <admin>true</admin>
+    </user>
+
+    <user id="2">
+        <name>sushan</name>
+        <password>1234</password>
+        <phoneid>13876543210</phoneid>
+        <admin>false</admin>
+    </user>
+</users>

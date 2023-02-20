@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Ikuns>
+
+
+    <ikun id="1">
+        <name id="k">ikun</name>
+        <age>108</age>
+    </ikun>
+
+    <ikun id="2">
+        <name id="s">苏珊</name>
+        <age>23</age>
+    </ikun>
+
+
+</Ikuns>

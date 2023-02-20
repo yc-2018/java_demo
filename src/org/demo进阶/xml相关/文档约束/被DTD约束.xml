@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE 书架 SYSTEM 'DTD文档约束.dtd'><!--引入本地dtd(掌握) <!DOCTYPE根元素名称SYSTEM 'DTD文件的路径'> -->
+
+<!--在xml文件内部引入 (了解) <!DOCTYPE 根元素名称 [dtd文件内容]>-->
+<!--<!DOCTYPE 书架 [<!ELEMENT 书架 (书+)>-->
+<!--        <!ELEMENT 书 (书名,作者,售价)>-->
+<!--        <!ELEMENT 书名 (#PCDATA)>-->
+<!--        <!ELEMENT 作者 (#PCDATA)>-->
+<!--        <!ELEMENT 售价 (#PCDATA)>]>-->
+
+
+<书架>
+    <书>
+        <书名>ikun手册</书名>
+        <作者>小黑子</作者>
+        <售价>108</售价>
+    </书>
+
+    <书>
+        <书名>假装纯路人</书名>
+        <作者>Ikun</作者>
+        <售价>168</售价>
+    </书>
+
+
+
+</书架>
