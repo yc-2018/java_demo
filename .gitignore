@@ -16,13 +16,16 @@ hs_err_pid*
 
 .idea
 
-*.iml*.bak
+*.iml
+
+
+*.bak
 *.class
 *.rar
 *.log
-*.project
-*.settings
-*.classpath
+.project
+.settings
+.classpath
 target
 classes
 lib
